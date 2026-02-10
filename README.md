@@ -20,3 +20,11 @@ View your app in AI Studio: https://ai.studio/apps/temp/1
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+---
+
+## Backend Architecture
+
+- Secure Gemini API integration using **Vercel Serverless Functions**
+- API keys are **never exposed to the frontend**
+- Environment variables are handled securely via **Vercel Environment Variables**
+- Frontend communicates with the backend through:
